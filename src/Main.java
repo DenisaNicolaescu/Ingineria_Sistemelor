@@ -1,7 +1,7 @@
 
 
     public static void main() {
-            Student s1 = new Student(586, "Victoria", "Roman", 22);
+            Student s1 = new Student(586, "Victoria", "Roman", "ISM/22");
 
             System.out.println(s1);
 
@@ -25,13 +25,29 @@
 
 
         Collections.sort(x);
-        System.out.println(x);
+        System.out.println("x:" + x);
         Collections.sort(y);
-        System.out.println(y);
+        System.out.println("y:" + y);
 
+        xPlusY.addAll(x);
         xPlusY.addAll(y);
         Collections.sort(xPlusY);
-        System.out.println(xPlusY);
+        System.out.println("xPlusY:" + xPlusY);
 
+        zSet.addAll(x);
+        zSet.retainAll(y);
+        System.out.println("zSet:" + zSet);
 
+        xMinusY.addAll(x);
+        xMinusY.removeAll(y);
+        System.out.println("xMinusY:" + xMinusY);
+
+        Set<Integer> Set = new TreeSet<>();
+        for (Integer val : xPlusY) {
+            if (val <= p) {
+                Set.add(val);
+            }
+        }
+        xPlusYLimitedByP.addAll(Set);
+        System.out.println("xPlusYLimitedByP:" + xPlusYLimitedByP);
 }

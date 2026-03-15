@@ -2,10 +2,10 @@ public class Student {
     private int numarMatricol;
     private String prenume;
     private String nume;
-    private int formatieDeStudiu;
+    private String formatieDeStudiu;
 
 
-    public Student(int numarMatricol, String prenume, String nume, int formatieDeStudiu) {
+    public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
         this.numarMatricol = numarMatricol;
         this.prenume = prenume;
         this.nume = nume;
