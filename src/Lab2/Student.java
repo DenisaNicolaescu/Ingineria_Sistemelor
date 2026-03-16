@@ -1,8 +1,10 @@
+package Lab2;
+
 public class Student {
-    private int numarMatricol;
-    private String prenume;
-    private String nume;
-    private String formatieDeStudiu;
+   public int numarMatricol;
+   public String prenume;
+   public String nume;
+   public String formatieDeStudiu;
 
 
     public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
@@ -11,6 +13,7 @@ public class Student {
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
     }
+
 
 
     public String toString() {
