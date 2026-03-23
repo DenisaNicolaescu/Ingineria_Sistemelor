@@ -1,5 +1,3 @@
-package Lab2;
-
 import java.util.Objects;
 
 public class Student {
@@ -20,13 +18,14 @@ public class Student {
         if(this == o)return true;
         if(o == null || getClass()!=o.getClass()) return false;
         Student student = (Student) o;
-        return  Objects.equals(prenume, student.prenume) &&
+        return  Objects.equals(numarMatricol, student.numarMatricol) &&
+                Objects.equals(prenume, student.prenume) &&
                 Objects.equals(nume, student.nume) &&
                 Objects.equals(formatieDeStudiu, student.formatieDeStudiu);
     }
 
     public int hashCode(){
-        return Objects.hash(prenume, nume, formatieDeStudiu);
+        return Objects.hash(numarMatricol, prenume, nume, formatieDeStudiu);
     }
 
     public String toString() {
