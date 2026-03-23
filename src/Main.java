@@ -58,7 +58,7 @@ public static void main() {
 
     // 3.5.2
     Path inputPath = Paths.get("studenti_in.txt");
-    Path outPath = Paths.get("studenti_out.txt");
+    Path outPath = Paths.get("studenti_out_sorted.txt");
 
     try{
         List<String> lines = Files.readAllLines(inputPath);
@@ -81,20 +81,37 @@ public static void main() {
             System.out.println(s);
         }
 
+//        Collections.sort(listaStudenti, new Comparator<Student>(){
+//            public int compare(Student s1, Student s2){
+//                return s1.nume.compareTo(s2.nume);
+//            }
+//        });
+//
+//        List<String> liniiDeSalvat = new ArrayList<>();
+//        for(Student s : listaStudenti){
+//            liniiDeSalvat.add(s.toString());
+//        }
+//        Files.write(outPath, liniiDeSalvat);
+//    }catch(IOException e){
+//        System.err.println("Eroare la manipularea fisierelor: " + e.getMessage());
+//    }
+
         Collections.sort(listaStudenti, new Comparator<Student>(){
             public int compare(Student s1, Student s2){
-                return s1.nume.compareTo(s2.nume);
+               int compGrupa = s1.formatieDeStudiu.compareTo(s2.formatieDeStudiu);
+               if(compGrupa != 0){
+                   return compGrupa;
+               }
+               return s1.nume.compareTo(s2.nume);
             }
         });
 
-        List<String> liniiDeSalvat = new ArrayList<>();
+        List<String> DeSalvat = new ArrayList<>();
         for(Student s : listaStudenti){
-            liniiDeSalvat.add(s.toString());
+            DeSalvat.add(s.toString());
         }
-        Files.write(outPath, liniiDeSalvat);
+        Files.write(outPath, DeSalvat);
     }catch(IOException e){
         System.err.println("Eroare la manipularea fisierelor: " + e.getMessage());
     }
-
-
 }
