@@ -56,7 +56,7 @@ public static void main() {
         System.out.println(" Studentul Maria Popa exista? " + studenti.contains(s2));
 
 
-    // 3.5.2
+    // 3.5.2/3.5.3
     Path inputPath = Paths.get("studenti_in.txt");
     Path outPath = Paths.get("studenti_out_sorted.txt");
 
@@ -104,7 +104,11 @@ public static void main() {
                }
                return s1.nume.compareTo(s2.nume);
             }
-        });
+        });// acelasi lucru cu *1
+
+        listaStudenti.sort(
+                Comparator.comparing(Student::getFormatie).thenComparing(Student::getNume)
+        );//*1
 
         List<String> DeSalvat = new ArrayList<>();
         for(Student s : listaStudenti){

@@ -13,6 +13,12 @@ public class Student {
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
     }
+    public String getNume(){
+        return nume;
+    }
+    public String getFormatie(){
+        return formatieDeStudiu;
+    }
 
     public boolean equals(Object o){
         if(this == o)return true;
