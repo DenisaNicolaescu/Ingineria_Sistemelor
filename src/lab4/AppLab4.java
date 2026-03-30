@@ -23,7 +23,19 @@ public class AppLab4 {
 
     HashMap<String, Tanar> tineri = new HashMap<>();
 
+    for(String nume : varste.keySet()){
+        int v = varste.get(nume);
+        String a = adrese.get(nume);
 
+        String adresa = adrese.getOrDefault(nume, "necunoscuta");
+
+        tineri.put(nume, new Tanar(nume, v, a));
+    }
+
+        System.out.println("\nLista Tineri: ");
+        for (String cheie : tineri.keySet()) {
+            System.out.println(tineri.get(cheie));
+        }
 
     }
 

@@ -12,6 +12,6 @@ public class Tanar {
     }
 
     public String toString(){
-        return "Tanar: " + "nume" + name + "varsta" + age + "adresa" + address;
+        return "Tanar-" + " nume: " + name + " ,varsta: " + age + " ,adresa: " + address;
     }
 }
