@@ -17,15 +17,16 @@ public class Student {
     public void setNota(float nota) {
         this.nota = nota;
     }
+    public float getNota(){
+        return nota;
+    }
     public String getNume(){
         return nume;
     }
     public String getFormatie(){
         return formatieDeStudiu;
     }
-    public float getNota(){
-        return nota;
-    }
+
 
 //    public boolean equals(Object o){
 //        if(this == o)return true;

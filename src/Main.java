@@ -172,4 +172,26 @@ public static void main() {
         System.out.println("Eroare: Fisierul nu a fost gasit.");
         e.printStackTrace();
     }
+
+    float notaM = gasesteNota("Bianca", "Popescu", studentiMap);
+    float notaN = gasesteNota("Ioan", "Popa", studentiMap);
+
+    System.out.println("Nota pentru Bianca Popescu: " + notaM);
+    System.out.println("Nota pentru Ioan Popa: " + notaM);
+}
+
+public static float gasesteNota(String prenume, String nume, HashMap<Integer, Student> tineri){
+    HashMap<String, Student> mapAuxiliar = new HashMap<>();
+    for(Student s : tineri.values()){
+        String cheieIdentificare = s.prenume + "-" + s.nume;
+        mapAuxiliar.put(cheieIdentificare, s);
+    }
+
+    String cheieCautata = prenume + "-" + nume;
+    Student studentGasit = mapAuxiliar.get(cheieCautata);
+
+    if(studentGasit !=null){
+        return studentGasit.getNota();
+    }
+    return 0.0f;
 }
