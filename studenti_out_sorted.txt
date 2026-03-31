@@ -1,6 +1,6 @@
-Student:Nr. Matricol- 1024 Nume- Mihalcea Prenume- Ioan Grupa- ISM141/1 Nota-0.0
-Student:Nr. Matricol- 1025 Nume- Popa Prenume- Andrei Grupa- ISM141/2 Nota-0.0
-Student:Nr. Matricol- 1026 Nume- Prodan Prenume- Anamaria Grupa- TI131/1 Nota-0.0
-Student:Nr. Matricol- 1026 Nume- Popescu Prenume- Bianca Grupa- TI131/2 Nota-0.0
-Student:Nr. Matricol- 1027 Nume- Mohanu Prenume- Paul Grupa- TI132/1 Nota-0.0
-Student:Nr. Matricol- 1028 Nume- Ionescu Prenume- Mihai Grupa- TI132/2 Nota-0.0
+Student:Nr. Matricol- 1028 ,Nume- Ionescu ,Prenume- Mihai ,Grupa- TI132/1 ,Nota-0.0
+Student:Nr. Matricol- 1024 ,Nume- Mihalcea ,Prenume- Ioan ,Grupa- ISM141/1 ,Nota-0.0
+Student:Nr. Matricol- 1027 ,Nume- Mohanu ,Prenume- Paul ,Grupa- TI132/1 ,Nota-0.0
+Student:Nr. Matricol- 1025 ,Nume- Popa ,Prenume- Andrei ,Grupa- ISM141/2 ,Nota-0.0
+Student:Nr. Matricol- 1029 ,Nume- Popescu ,Prenume- Bianca ,Grupa- TI131/1 ,Nota-0.0
+Student:Nr. Matricol- 1026 ,Nume- Prodan ,Prenume- Anamaria ,Grupa- TI131/1 ,Nota-0.0
