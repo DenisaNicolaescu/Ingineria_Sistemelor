@@ -57,14 +57,14 @@ public class MainStudenti4 {
             e.printStackTrace();
         }
 
-        float notaM = gasesteNota("Bianca", "Popescu", studentiMap);
-        float notaN = gasesteNota("Ioan", "Popa", studentiMap);
+        double notaM = gasesteNota("Bianca", "Popescu", studentiMap);
+        double notaN = gasesteNota("Ioan", "Popa", studentiMap);
 
         System.out.println("Nota pentru Bianca Popescu: " + notaM);
         System.out.println("Nota pentru Ioan Popa: " + notaM);
     }
 
-    public static float gasesteNota(String prenume, String nume, HashMap<Integer, Student> tineri){
+    public static double gasesteNota(String prenume, String nume, HashMap<Integer, Student> tineri){
         HashMap<String, Student> mapAuxiliar = new HashMap<>();
         for(Student s : tineri.values()){
             String cheieIdentificare = s.prenume + "-" + s.nume;
@@ -77,7 +77,7 @@ public class MainStudenti4 {
         if(studentGasit !=null){
             return studentGasit.getNota();
         }
-        return 0.0f;
+        return 0.0d;
     }
 
 }

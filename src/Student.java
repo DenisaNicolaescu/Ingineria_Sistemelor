@@ -5,7 +5,7 @@ public class Student {
    public String prenume;
    public String nume;
    public String formatieDeStudiu;
-   public float nota;
+   public double nota;
 
 
     public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
@@ -14,10 +14,19 @@ public class Student {
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
     }
-    public void setNota(float nota) {
+
+    public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu, double nota) {
+        this.numarMatricol = numarMatricol;
+        this.prenume = prenume;
+        this.nume = nume;
+        this.formatieDeStudiu = formatieDeStudiu;
         this.nota = nota;
     }
-    public float getNota(){
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+    public double getNota(){
         return nota;
     }
     public String getNume(){
