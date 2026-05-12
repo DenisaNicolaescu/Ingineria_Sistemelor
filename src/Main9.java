@@ -45,6 +45,8 @@ public class Main9 {
                 .collect(Collectors.toList());
         System.out.println("\nc) Lista după aplicarea notei minime de 4: " + studentiModificati);
         studentiModificati.forEach(System.out::println);
+        System.out.println();
+        studentiCuNote.forEach(System.out::println);
 
         System.out.println();
 
