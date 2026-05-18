@@ -8,6 +8,6 @@ public class StudentiInFisierXlsx implements IStudentiExport {
     }
 
     public void doExport(List<Student> studenti){
-        System.out.println(" Export XLSX in: " + fileName);
+        System.out.println("Export XLSX in: " + fileName);
     }
 }

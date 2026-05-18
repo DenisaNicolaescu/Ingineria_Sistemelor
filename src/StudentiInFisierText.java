@@ -13,8 +13,9 @@ public class StudentiInFisierText implements IStudentiExport{
     public void doExport(List<Student> studenti){
         try(PrintWriter writer = new PrintWriter(fileName)){
             for(Student s : studenti){
-                writer.println(s.toString());
+                writer.println(s.getNrMatricol() + "," + s.getPrenume() + "," + s.getNume() + "," + s.getFormatie() + "," + s.getNota());
             }
+            System.out.println("Export text finalizat in: " + fileName);
         }catch (IOException e){
             e.printStackTrace();
         }

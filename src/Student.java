@@ -26,11 +26,17 @@ public class Student {
     public void setNota(double nota) {
         this.nota = nota;
     }
+    public int getNrMatricol(){
+        return numarMatricol;
+    }
     public double getNota(){
         return nota;
     }
     public String getNume(){
         return nume;
+    }
+    public String getPrenume(){
+        return prenume;
     }
     public String getFormatie(){
         return formatieDeStudiu;
